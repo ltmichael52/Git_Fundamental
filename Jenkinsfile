@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master',
+                git branch: 'loc_feature',
                     url: "${GIT_URL}",
                     credentialsId: "${GIT_CREDENTIALS}"
             }
